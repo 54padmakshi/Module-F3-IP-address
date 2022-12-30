@@ -40,8 +40,14 @@ function ipaddress(ip) {
          document.getElementById('na').innerHTML = `Name:${jsondata[0].PostOffice[0].Name}`
          document.getElementById('bt').innerHTML = `Branch Type: ${jsondata[0].PostOffice[0].BranchType}`
          document.getElementById('ds').innerHTML = `Delivery status : ${jsondata[0].PostOffice[0].DeliveryStatus}`
-         document.getElementById('distri').innerHTML = `District :${jsondata[0].PostOffice[1].District}`
-         document.getElementById('divi').innerHTML = `Division :${jsondata[0].PostOffice[1].Division}`
+         document.getElementById('distri').innerHTML = `District :${jsondata[0].PostOffice[0].District}`
+         document.getElementById('divi').innerHTML = `Division :${jsondata[0].PostOffice[0].Division}`
+
+         document.getElementById('nam').innerHTML = `Name:${jsondata[0].PostOffice[1].Name}`
+         document.getElementById('brt').innerHTML = `Branch Type: ${jsondata[0].PostOffice[1].BranchType}`
+         document.getElementById('del').innerHTML = `Delivery status : ${jsondata[0].PostOffice[1].DeliveryStatus}`
+         document.getElementById('dis').innerHTML = `District :${jsondata[0].PostOffice[1].District}`
+         document.getElementById('div').innerHTML = `Division :${jsondata[0].PostOffice[1].Division}`
       })
 
    })
