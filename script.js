@@ -26,7 +26,7 @@ function ipaddress(ip) {
       document.getElementById('city').innerHTML = `City : ${json.city}`;
       document.getElementById('org').innerHTML = `Organization :  ${json.org}`;
       document.getElementById('Region').innerHTML = `Region : ${json.region}`;   
-      document.getElementById('hostn').innerHTML = `Hostname : ${json.hostname}`;
+      document.getElementById('hostn').innerHTML = `Hostname : ${window.location.hostname}`;
       document.getElementById('p').innerHTML = `Pincode: ${json.postal}`;
       document.getElementById('t').innerHTML = `Time Zone: ${json.timezone}`
       
